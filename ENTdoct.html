@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Doctors' Page - MediHub-TPT</title>
+    <link rel="icon" href="https://us.123rf.com/450wm/mantinov/mantinov2004/mantinov200400007/143789285-help-for-health-icon-logo-vector-graphic-design-helping-hands-inside-medical-cross-sign.jpg?ver=6" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+        }
+
+        .doctor-image {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        .doctor-image img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .doctor-info {
+            flex-grow: 1;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .book-appointment {
+            margin-right: 20px;
+            float: right;
+            padding: 10px;
+            background-color: #eff2ef; /* Replace with your desired color */
+            color: #1563b1; /* Set text color to white */
+            padding: 10px 20px; /* Add padding for better visual appearance */
+            border: 1px solid black; /* Remove border */
+            border-radius: 100px; /* Add border radius for rounded corners */
+            cursor: pointer;
+            border-color: #1563b1;
+            
+        }
+
+
+        .book-appointment:hover {
+        background-color: #45a049; /* Replace with the desired hover color */
+        color: #ddd;
+}
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar .logo img {
+    height: 70px;
+    width: auto;
+    margin: 5px;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .about-us {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThjMJ3k_Id84aqjc68BAIJ28dhJgggk_Z2YA&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .about-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  #specializations {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .specialization {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .specialization h3 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  .specialization p {
+    color: #666;
+    font-size: 14px;
+  }
+
+  nav a, .contact-section p, .follow-us-section ul {
+    margin: 5px 0;
+  }
+  
+  .contact-section, .follow-us-section {
+    flex-basis: 50%;
+  }
+  
+  .contact-section h4, .follow-us-section h4 {
+    margin-bottom: 10px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #1dce0d;
+    text-decoration: none;
+    position: relative;
+    padding-right: 12px;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .header {
+    background-color: #f8f8f8;
+    padding: 0;
+  }
+  
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(25, 174, 211);
+    height: 50px;
+    margin-left: -10px;
+    padding: 25px;
+    margin-bottom: -5px;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-top {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .nav-close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin-left: 45px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: larger;
+  }
+.navbar-link {
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+.main-content {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    padding-left: 70px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    margin-bottom: -80px;
+    background-image: url('https://www.primomedico.com/media/specialty/Aerzte-medizinische-Zentren-Hals-Nasen-Ohrenheilkunde.jpg.730x0_q85_crop_upscale.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    font-size: xx-large;
+    height: 300px;
+  }
+  .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #dce2e2;
+  padding: 10px;
+  border-radius: 3px;
+  z-index: 999;
+  width: 150px;
+}
+
+.navbar-item:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a:hover{
+  text-decoration: none;
+  color: #261cd4;
+}
+.dropdown-menu a{
+  color: #000;
+  font-size: large;
+}
+.arr{
+display: inline-block;
+width: 5px;
+height: 5px;
+margin-right: 5px;
+border-top: 2px solid #000;
+border-right: 2px solid #000;
+transform: rotate(135deg);
+}
+    </style>
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container2">
+          <nav class="navbar" data-navbar>
+    
+            <div class="navbar-top">
+    
+              <a href="#" class="logo">
+                <img class="imggs" src="https://us.123rf.com/450wm/mantinov/mantinov2004/mantinov200400007/143789285-help-for-health-icon-logo-vector-graphic-design-helping-hands-inside-medical-cross-sign.jpg?ver=6" width="70" height="60" alt="Doclab home">
+              </a>
+              <hl style="font-size: x-large;">MEDI-HUB</hl>
+    
+              <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+    
+            </div>
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="http://localhost/MEDIHUBTPT/homepage1.html" class="navbar-link title-md">Home</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#doct" class="navbar-link title-md">Doctors</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#" class="navbar-link title-md">Services  <span class="arr"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://127.0.0.1:5500/Cordiololgy.html" >Cardialogy</a></li>
+                  <li><a href="http://127.0.0.1:5500/opthomology.html" >Opthomology</a></li>
+                  <li><a href="http://127.0.0.1:5500/Paediatrician.html" >Paediatrician</a></li>
+                  <li><a href="http://127.0.0.1:5500/Gynecology.html#" >Gynecology</a></li>
+                  <li><a href="http://127.0.0.1:5500/Dentaldoc.html" >Dentistry</a></li>
+                  <li><a href="http://127.0.0.1:5500/ENTdoct.html" >ENT Specialists</a></li>
+                  <li><a href="http://127.0.0.1:5500/Orthopedistdoct.html" >Orthopedics</a></li>
+                </ul>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="http://localhost/MEDIHUBTPT/loginpage1.php" class="navbar-link title-md">Logout</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="main-content">
+            <h1>Best Doctors In ENT</h1><br>
+        <div class="background">
+          <div class="transbox">
+      </div>
+    </div>
+    </div>
+    <main>
+        <section id="doct">
+            <div class="doctor-image">
+                <img src="https://media.licdn.com/dms/image/D5603AQHjt9PmE5ih_w/profile-displayphoto-shrink_800_800/0/1681481496976?e=2147483647&v=beta&t=GsApoaJs56UmOuxI6Dd6sbInYX6wE-jHhZxjaNtUfn8" alt="Dr. John Smith">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr.Raja Preetham Betha</h2>
+                <p><strong>Specialization:</strong> Ent Care specialise in ENT Surgeon, Otorhinolaryngologist, Pediatric Otorhinolaryngologist</p>
+                <p><strong>Hospital:</strong>Dr.Raja Preetham ENT Care</p>
+                <p><strong>Education:</strong>Studied MBBS at NTR University of Health Sciences, MS</p>
+                <p><strong>Experience:</strong> Dr. Raja Preetham is a renowned ENT specialist known for her expertise in treating a wide range of ear, nose, and throat conditions. </p>
+                <p>Practices at Medigo Multi-speciality hospital</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://assets.lybrate.com/f_auto,c_limit,w_384,q_auto/img/documents/doctor/dp/9ddd1f0920091649869e6aff0e363c47/Ear-Nose-Throat-ENT--Manusrut-Vellore-70c2dc.JPG" alt="Dr. Sarah Johnson">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Manusrut</h2>
+                <p><strong>Specialization:</strong> ENT Specialist</p>
+                <p><strong>Hospital:</strong>Malla Reddy Narayana Hospital</p>
+                <p><strong>Education:</strong>Fellowship in Implant Otology , Christian Medical College, Vellore , 2016. MS - ENT , Kasturba Medical College, Manipal. ,2014 DNB (ENT) ,NATBOARD ,New delhi ,2014 MBBS ,Gandhi Medical College, Hyderabad ,2010 Advanced Cochlear Implant Training ,ICIT,LA,USA ,2016</p>
+                <p><strong>Experience:</strong> Dedicated to providing compassionate care to Dental patients for over 13 years</p>
+                <p>The professional Memberships of manusrut in Indian Society of Otology,
+                    Association of Otolaryngologists of India (AOI),
+                    Cochlear Implant Group of India (CIGI)</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://assets.lybrate.com/f_auto,c_limit,w_384,q_auto/img/documents/doctor/dp/2e413e52db4a4dc9a9af673073cbdc05/Ear-Nose-Throat-ENT--HarikumarDarimisetty-Tirupati-0f5b05" alt="Dr. Emily Thompson" height="200px">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Harikumar Darimisetty</h2>
+                <p><strong>Specialization:</strong> ENT Specialist, ENT Surgeon</p>
+                <p><strong>Hospital:</strong>Vallabhaa Hospital</p>
+                <p><strong>Education:</strong> MS , Andhra Medical College, Visakhapatnam , 2014.
+                    MBBS , Dr. NTR University of Health Sciences Andhra Pradesh , 2006</p>
+                <p><strong>Experience:</strong>He has had many happy patients in his 17 years of journey as a ENT Specialist. He is a MS, MBBS . He is currently associated with null in AIR Bypass Road, Tirupati.</p>
+                <p>Dr.Harikumar Darimisetty  is a highly experienced ENT surgeon with a focus on advanced surgical techniques. He has a stellar reputation for his successful outcomes in complex ENT surgeries.</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://media.curofy.com/956b17c87c66681cb73ec654ec83d3bb.jpg" alt="Dr. Sarah Johnson">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Sreenivas Gouripeddi</h2>
+                <p><strong>Specialization:</strong>ENT Specialist</p>
+                <p><strong>Hospital:</strong> Lotus Hospitals</p>
+                <p><strong>Education:</strong>M.B.B.S , Kurnool Medical College , null</p>
+                <p><strong>Experience:</strong> Dr.Sreenivas Gouripeddi  is known for her expertise in diagnosing and treating a wide range of ENT conditions, including sinus infections, hearing loss, and throat disorders</p>
+                <p>Dr.Sreenivas Gouripeddi is a highly skilled and compassionate ENT specialist dedicated to providing comprehensive care to patients with ear, nose, and throat disorders.</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Aster Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>

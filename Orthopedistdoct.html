@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="https://us.123rf.com/450wm/mantinov/mantinov2004/mantinov200400007/143789285-help-for-health-icon-logo-vector-graphic-design-helping-hands-inside-medical-cross-sign.jpg?ver=6" type="image/x-icon">
+    <title>Doctors' Page MediHub-TPT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+        }
+
+        .doctor-image {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        .doctor-image img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .doctor-info {
+            flex-grow: 1;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .book-appointment {
+            margin-right: 20px;
+            float: right;
+            padding: 10px;
+            background-color: #eff2ef; /* Replace with your desired color */
+            color: #1563b1; /* Set text color to white */
+            padding: 10px 20px; /* Add padding for better visual appearance */
+            border: 1px solid black; /* Remove border */
+            border-radius: 100px; /* Add border radius for rounded corners */
+            cursor: pointer;
+            border-color: #1563b1;
+            
+        }
+
+
+        .book-appointment:hover {
+        background-color: #45a049; /* Replace with the desired hover color */
+        color: #ddd;
+}
+
+footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+.navbar .logo img {
+    height: 70px;
+    width: auto;
+    margin: 5px;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .about-us {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThjMJ3k_Id84aqjc68BAIJ28dhJgggk_Z2YA&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .about-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  #specializations {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .specialization {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .specialization h3 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  .specialization p {
+    color: #666;
+    font-size: 14px;
+  }
+
+  nav a, .contact-section p, .follow-us-section ul {
+    margin: 5px 0;
+  }
+  
+  .contact-section, .follow-us-section {
+    flex-basis: 50%;
+  }
+  
+  .contact-section h4, .follow-us-section h4 {
+    margin-bottom: 10px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #1dce0d;
+    text-decoration: none;
+    position: relative;
+    padding-right: 12px;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .header {
+    background-color: #f8f8f8;
+    padding: 0;
+  }
+  
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(25, 174, 211);
+    height: 50px;
+    margin-left: -10px;
+    padding: 25px;
+    margin-bottom: -5px;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-top {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .nav-close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin-left: 45px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: larger;
+  }
+.navbar-link {
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+.main-content {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    padding-left: 70px;
+    padding-top: 150px;
+    margin-bottom: -50px;
+    background-image: url('https://www.narayanahealth.org/blog/wp-content/uploads/2018/05/stock-photo-orthopedist-doctor-in-hospital-with-patient-and-model-of-knee-medical-orthopedic-concept-777603103.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #090997;
+    text-align: center;
+    font-size: xx-large;
+    height: 300px;
+  }
+  .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #dce2e2;
+  padding: 10px;
+  border-radius: 3px;
+  z-index: 999;
+  width: 150px;
+}
+
+.navbar-item:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a:hover{
+  text-decoration: none;
+  color: #261cd4;
+}
+.dropdown-menu a{
+  color: #000;
+  font-size: large;
+}
+.arr{
+display: inline-block;
+width: 5px;
+height: 5px;
+margin-right: 5px;
+border-top: 2px solid #000;
+border-right: 2px solid #000;
+transform: rotate(135deg);
+}
+    </style>
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container2">
+          <nav class="navbar" data-navbar>
+    
+            <div class="navbar-top">
+    
+              <a href="#" class="logo">
+                <img class="imggs" src="https://us.123rf.com/450wm/mantinov/mantinov2004/mantinov200400007/143789285-help-for-health-icon-logo-vector-graphic-design-helping-hands-inside-medical-cross-sign.jpg?ver=6" width="70" height="60" alt="Doclab home">
+              </a>
+              <hl style="font-size: x-large;">MEDI-HUB</hl>
+    
+              <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+    
+            </div>
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="http://localhost/MEDIHUBTPT/homepage1.html" class="navbar-link title-md">Home</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#doct" class="navbar-link title-md">Doctors</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#" class="navbar-link title-md">Services <span class="arr"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://127.0.0.1:5500/Cordiololgy.html" >Cardialogy</a></li>
+                  <li><a href="http://127.0.0.1:5500/opthomology.html" >Opthomology</a></li>
+                  <li><a href="http://127.0.0.1:5500/Paediatrician.html" >Paediatrician</a></li>
+                  <li><a href="http://127.0.0.1:5500/Gynecology.html#" >Gynecology</a></li>
+                  <li><a href="http://127.0.0.1:5500/Dentaldoc.html" >Dentistry</a></li>
+                  <li><a href="http://127.0.0.1:5500/ENTdoct.html" >ENT Specialists</a></li>
+                  <li><a href="http://127.0.0.1:5500/Orthopedistdoct.html" >Orthopedics</a></li>
+                </ul>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="http://localhost/MEDIHUBTPT/loginpage1.php" class="navbar-link title-md">Logout</a>
+              </li>
+    
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="main-content">
+            <h1>Best Doctors In Orthopedist</h1><br>
+        <div class="background">
+          <div class="transbox">
+      </div>
+    </div>
+    </div>
+    <main>
+        <section id="doct">
+            <div class="doctor-image">
+                <img src="https://images1-fabric.practo.com/doctor/623422/dr-babu-singiri-59e38171837df.jpg" alt="Dr. John Smith">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Babu Singiri</h2>
+                <p><strong>Specialization:</strong> Orthopaedic Surgeon</p>
+                <p><strong>Hospital:</strong>BABU MultiSpeciality Hospital</p>
+                <p><strong>Education:</strong>Dr. Babu Singiri is studying DNB from BIRRD T Hospital TTD.</p>
+                <p><strong>Experience:</strong> Dr. Babu Singiri works with BABU MULTISPECIALITY HOSPITAL from undefined undefined 17 as a MBBS D.ortho DNB.</p>
+                <p>He has Membership in IMA Indian medical association,
+                    TOSS TIRUPATI orthopaedic surgeon society</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://media.licdn.com/dms/image/C4E03AQEb8s5jRJoKTQ/profile-displayphoto-shrink_400_400/0/1517272778120?e=1691625600&v=beta&t=x31iqSu9j6tsk-mQj132FUZTFYZXdYuGLbuZomKrmrk" alt="Dr. Sarah Johnson">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Kalyan Kumar</h2>
+                <p><strong>Specialization:</strong>Consultant Orthopaedic Surgeon</p>
+                <p><strong>Hospital:</strong>Sankalpa Superspeciality Hospital</p>
+                <p><strong>Education:</strong>sv medical college,tirupati,ap,India</p>
+                <p><strong>Experience:</strong>Dr. Kalyan Kumar works with Sankalpa Superspeciality Hospital from undefined undefined 3 as a Consultant Orthopaedic Surgeon.</p>
+                <p>Dr. Kalyan Kumar is a highly experienced orthopedic surgeon specializing in joint replacement and sports medicine.</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://media.curofy.com/fc7999b235493ddd8c5020a65b26c7bb_1.jpg" alt="Dr. Emily Thompson" height="200px">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Satish Reddy Chalamala</h2>
+                <p><strong>Specialization:</strong> Orthopaedic Surgeon</p>
+                <p><strong>Hospital:</strong>Satish Reddy Hoapital</p>
+                <p><strong>Education:</strong> Dr. Satish Reddy Chalamala completed M.B.B.S from Sri Ramachandra Medical College & Research Institute.</p>
+                <p><strong>Experience:</strong></p>
+                <p>Stish Reddy a dedicated orthopedic surgeon specializing in spine surgery. With extensive experience in diagnosing and treating spinal disorders.</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="data:image/jpeg;base64,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" alt="Dr. Sarah Johnson">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Syam Malchi</h2>
+                <p><strong>Specialization:</strong>Orthopaedic Surgeon</p>
+                <p><strong>Hospital:</strong> Birrd Hoapitals</p>
+                <p><strong>Education:</strong> Dr. Syam Malchi completed Post Graduation from Narayana Medical College.S V Medical College M.B.B.S.</p>
+                <p><strong>Experience:</strong>Dr. Syam is a dedicated orthopedic surgeon specializing in spine surgery. With extensive experience in diagnosing and treating spinal disorders for 10years.</p>
+                <p>Dr. Syam has helped numerous patients find relief from back pain and regain their mobility.</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+    </main>
+    </main>
+    <footer>
+        <p>&copy; 2023 Aster Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>

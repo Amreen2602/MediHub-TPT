@@ -1,0 +1,632 @@
+  
+ .navbar .logo img {
+  height: 70px;
+  width: auto;
+  margin: 5px;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.about-us {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThjMJ3k_Id84aqjc68BAIJ28dhJgggk_Z2YA&usqp=CAU');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.about-us h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-us p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+
+
+nav a, .contact-section p, .follow-us-section ul {
+  margin: 5px 0;
+}
+
+.contact-section, .follow-us-section {
+  flex-basis: 50%;
+}
+
+.contact-section h4, .follow-us-section h4 {
+  margin-bottom: 10px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #1dce0d;
+  text-decoration: none;
+  position: relative;
+  padding-right: 12px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+.header {
+  background-color: #f8f8f8;
+  padding: 0;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(25, 174, 211);
+  height: 70px;
+  margin-top: -7.5px;
+  margin-bottom: -5px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.nav-close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 45px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+}
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.quick-links h4,
+.popular-links h4,
+.get-in-touch h4,
+.follow-us h4 {
+  margin-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul li a {
+  text-decoration: none;
+}
+
+footer ul li:before {
+  content: "\2192";
+  display: inline-block;
+  margin-right: 5px;
+}
+footer ul li a:hover {
+  color: rgb(43, 215, 103);
+} 
+.footer-content{
+  background-color: rgb(27, 27, 56);
+  padding: 35px;
+  margin-top: -7.5px;
+  margin-left: -28px;
+  margin-right: -27px;
+  color: #f8f8f8;
+  margin-bottom: -28px;
+}
+footer ul li a{
+  color: #f8f8f8;
+}
+
+.navbar-link {
+text-decoration: none; /* Remove underline */
+}
+
+.navbar-link:hover {
+text-decoration: none; /* Remove underline on hover */
+}
+/* Adjust the section background color */
+.service {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+  margin-left: 0;
+}
+
+/* Center align the service cards */
+.containerB{
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the service list */
+.service-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+/* Style the last service card */
+.service-list li:last-child .service-card {
+  margin-right: unset; /* Reset the margin for the last card */
+}
+
+/* Style the card icon */
+.card-icon img {
+  width: 71px;
+  height: 71px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style the card title */
+.card-title a {
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  display: block;
+}
+
+/* Style the card text */
+.card-text {
+  color: #666666;
+  margin-top: 10px;
+}
+
+/* Style the read more button */
+.btn-circle {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.btn-circle::before {
+  content: "\f054"; /* Font Awesome right arrow icon code */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+}
+
+/* Adjust the button icon color */
+.btn-circle ion-icon {
+  color: #ffffff;
+}
+.cover {
+  padding: 0px 30px;
+  position: relative;
+  margin-top: 100px;
+}
+.left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.service-card img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.containerB::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa;
+}
+
+.containerB::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.service-card {
+  min-width: 220px;
+  height: 300px;
+  margin: 1px 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(25% - 20px); /* Adjust the width of each card */
+  margin-bottom: 20px;
+  margin-right: 0; /* Remove the right margin */
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.containerB {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.service {
+  /* Set a fixed height to create a scrollable area */
+  height: 400px;
+  overflow-x: auto; /* Enable vertical scrolling */
+  overflow-y: hidden;
+  display: flex; /* Add flex display to align items */
+  align-items: center;
+   /* Center align items vertically */
+   white-space: normal;
+}
+
+.containerB {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  margin-bottom: 20px;
+}
+/* Hide the scrollbar and provide custom styles (optional) */
+.service::-webkit-scrollbar {
+  width: 8px;
+}
+
+.service::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.service::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+  .left,
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+.section.listing {
+  background-color: #96eaeb;
+  padding: 40px 0;
+  background-image: url("https://thumbs.dreamstime.com/b/doctor-stethoscope-white-icon-medical-hospital-backg-background-technology-network-concept-94228000.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.containerC {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section-subtitle {
+  color: #064054;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.headline-md {
+  color: #0a3826;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.listing-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  height: 200px;
+}
+
+.listing-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon img {
+  width: 180px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 2px;
+  margin-right: -5px;
+  margin-left: 25px;
+}
+
+.card-title {
+  color: #54cce7;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.card-icon {
+  margin-right: 20px;
+}
+
+.card-text {
+  color: #088488;
+  margin-top: 10px;
+}  
+
+.listing-card > div {
+flex: 1; /* Distribute remaining space */
+}
+
+.listing-card > div:last-child {
+text-align: center; /* Center align the text */
+}
+  .ticker {
+    border: 0px solid black;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .ticker ul {
+    list-style-type: none;
+    white-space: nowrap;
+    animation: ticker-scroll 15s infinite linear;
+  }
+  
+  .ticker li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .ticker li:first-child {
+    animation-delay: 0s; /* Add this to remove delay for the first image */
+  }
+  
+  .ticker li img {
+    width: 250px; /* Adjust the size as needed */
+    height: 250px;
+    vertical-align: middle;
+    font-size:100px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+  }
+  
+  @keyframes ticker-scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(calc(-100% + 10px)); /* Adjust the value based on the image margin */
+    }
+  }
+  
+  .copyright {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+  }
+  .main-content {
+    padding: 250px;
+    background-image: url('https://docpulse.com/wp-content/uploads/2020/12/MicrosoftTeams-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #110f0f;
+    text-align: center;
+    height: 100px;
+    margin: auto;
+    margin-left: -5px;
+  }
+  div.transbox {
+    margin-top: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.85;
+    padding-bottom: 15px;
+
+  }
+  
+  div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+  .my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .my-button:hover {
+    background-color: #555;
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #d7dede;
+    padding: 10px;
+    border-radius: 3px;
+    z-index: 999;
+    width: 150px;
+  }
+  
+  .navbar-item:hover .dropdown-menu {
+    display: block;
+  }
+  .arr{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 5px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(135deg);
+  }
+  .dropdown-menu a:hover{
+    text-decoration: none;
+    color: #2741ac;
+  }
+  .dropdown-menu a{
+    color: #000;
+    font-size: large;
+    padding: 5px;
+  }
+  .headline-sm.card-title a:hover{
+    cursor: pointer;
+    color: #007bff;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .logout-link {
+    color: #f00;
+  }
+  
+  /* Add your existing CSS styles for other elements here */
+  

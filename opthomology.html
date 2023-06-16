@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctors' page MediHub-TPT</title>
+    <link rel="icon" href="https://us.123rf.com/450wm/mantinov/mantinov2004/mantinov200400007/143789285-help-for-health-icon-logo-vector-graphic-design-helping-hands-inside-medical-cross-sign.jpg?ver=6" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+        }
+
+        .doctor-image {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        .doctor-image img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .doctor-info {
+            flex-grow: 1;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .book-appointment {
+            margin-right: 20px;
+            float: right;
+            padding: 10px;
+            background-color: #eff2ef; /* Replace with your desired color */
+            color: #1563b1; /* Set text color to white */
+            padding: 10px 20px; /* Add padding for better visual appearance */
+            border: 1px solid black; /* Remove border */
+            border-radius: 100px; /* Add border radius for rounded corners */
+            cursor: pointer;
+            border-color: #1563b1;
+            
+        }
+
+
+        .book-appointment:hover {
+        background-color: rgb(25, 174, 211); /* Replace with the desired hover color */
+        color: #ddd;
+}
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar .logo img {
+    height: 70px;
+    width: auto;
+    margin: 5px;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .about-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+ 
+  nav a, .contact-section p, .follow-us-section ul {
+    margin: 5px 0;
+  }
+  
+  .contact-section, .follow-us-section {
+    flex-basis: 50%;
+  }
+  
+  .contact-section h4, .follow-us-section h4 {
+    margin-bottom: 10px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #1dce0d;
+    text-decoration: none;
+    position: relative;
+    padding-right: 12px;
+    font-size: large;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .header {
+    background-color: #f8f8f8;
+    padding: 0;
+  }
+  
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(25, 174, 211);
+    height: 50px;
+    margin-top: -7.5px;
+    padding: 25px;
+    margin-bottom: -5px;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-top {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .nav-close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin-left: 45px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+.navbar-link {
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+.main-content {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    padding-left: 70px;
+    padding-top: 150px;
+    margin-bottom: -10px;
+    background-image: url('https://www.rambam.org.il/en/files/Image00010.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #00039d;
+    text-align: center;
+    font-size: xx-large;
+    height: 300px;
+  }
+  .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #dce2e2;
+  padding: 10px;
+  border-radius: 3px;
+  z-index: 999;
+  width: 150px;
+}
+
+.navbar-item:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a:hover{
+  text-decoration: none;
+  color: #261cd4;
+}
+.dropdown-menu a{
+  color: #000;
+  font-size: large;
+}
+.arr{
+display: inline-block;
+width: 5px;
+height: 5px;
+margin-right: 5px;
+border-top: 2px solid #000;
+border-right: 2px solid #000;
+transform: rotate(135deg);
+}
+    </style>
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container2">
+          <nav class="navbar" data-navbar>
+    
+            <div class="navbar-top">
+    
+              <a href="#" class="logo">
+                <img class="imggs" src="https://us.123rf.com/450wm/mantinov/mantinov2004/mantinov200400007/143789285-help-for-health-icon-logo-vector-graphic-design-helping-hands-inside-medical-cross-sign.jpg?ver=6" width="70" height="60" alt="Doclab home">
+              </a>
+              <hl style="font-size: x-large;">MEDI-HUB</hl>
+    
+              <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+    
+            </div>
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="http://localhost/MEDIHUBTPT/homepage1.html" class="navbar-link title-md">Home</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#doct" class="navbar-link title-md">Doctors</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#" class="navbar-link title-md">Services <span class="arr"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://127.0.0.1:5500/Cordiololgy.html" >Cardialogy</a></li>
+                  <li><a href="http://127.0.0.1:5500/opthomology.html" >Opthomology</a></li>
+                  <li><a href="http://127.0.0.1:5500/Paediatrician.html" >Paediatrician</a></li>
+                  <li><a href="http://127.0.0.1:5500/Gynecology.html#" >Gynecology</a></li>
+                  <li><a href="http://127.0.0.1:5500/Dentaldoc.html" >Dentistry</a></li>
+                  <li><a href="http://127.0.0.1:5500/ENTdoct.html" >ENT Specialists</a></li>
+                  <li><a href="http://127.0.0.1:5500/Orthopedistdoct.html" >Orthopedics</a></li>
+                </ul>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="http://localhost/MEDIHUBTPT/loginpage1.php" class="navbar-link title-md">Logout</a>
+              </li>
+  
+    
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="main-content">
+            <h1>Best Doctors In <br>
+                Opthomology</h1><br>
+        <div class="background">
+          <div class="transbox">
+      </div>
+    </div>
+    </div>
+    <main>
+        <section id="doct">
+            <div class="doctor-image">
+                <img src="https://www.navyanethralaya.in/assets/images/mu.png" alt="Dr. John Smith">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr.V.Krishna Murthy</h2>
+                <p><strong>Specialization:</strong> Opthomologist</p>
+                <p><strong>Hospital:</strong>Navya Nethralaya Hospital</p>
+                <p><strong>Education:</strong>MS.Do., F.A.G.E., Phaco & Lasik Surgeon</p>
+                <p><strong>Experience:</strong> Over 10 years of experience </p>
+                <p>Dr.V.Krishna Murthy is a renowned opthomologist with a passion for providing exceptional patient care....</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">
+                  Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipP2Phxs5Aj7gRS4QHJOyzVgj1vgfHy_akG36QiP=s1360-w1360-h1020" alt="Dr. Sarah Johnson">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr.J.S.Reddy</h2>
+                <p><strong>Specialization:</strong> Opthomologist</p>
+                <p><strong>Hospital:</strong> Dr. Agarwal’s Eye Hospital, Air Bypass Road</strong></p>
+                <p><strong>Education:</strong>Professor of Gynecology, HOD</p>
+                <p><strong>Experience:</strong> Dedicated to providing compassionate care towards patients for over 35 years</p>
+                <p>Dr.J.S.Reddy is a highly skilled and compassionate doctor who has great service period...</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://imagesx.practo.com/providers/dr-v-madhavi-ophthalmologist-eye-surgeon-chittoor-6799f231-2574-4c9e-98c9-58ba6c0be4c9.jpg?i_type=t_100x100" alt="Dr. Emily Thompson" height="200px">
+            </div>
+            <div class="doctor-info">
+                <h2> Dr.Madhavi </h2>
+                <p><strong>Specialization:</strong>Opthomologist</p>
+                <p><strong>Education:</strong>M.B.B.S, MS - Ophthalmology</p>
+                <p><strong>Hospital:</strong>Dr Madhavi Retina Eye Care </p>
+                <p><strong>Experience:</strong> Extensive experience in diagnosing and treating various eye conditions</p>
+                <p> Dr.Madhavi  is a skilled Opthomologist with a passion for helping patients achieve health...</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://imagesx.practo.com/providers/dr-shobana-ganta-ophthalmologist-eye-surgeon-tirupati-ba896c34-641d-46b5-aecf-5871b111d0fd.jpg?i_type=t_100x100" alt="Dr. Sarah Johnson" height="200px">
+            </div>
+            <div class="doctor-info">
+                <h2>
+                  Dr. Shobana Ganta</h2>
+                <p><strong>Specialization:</strong> Opthomologist</p>
+                <p><strong>Hospital:</strong>Vallabha Hospital</p>
+                <p><strong>Education:</strong> MBBS, MS - Ophthalmology
+
+                  Ophthalmologist/ Eye Surgeon </p>
+                <p><strong>Experience:</strong> 16 Years Experience Overall</p>
+                <p>
+                  Dr. Shobana Ganta is highly qualified and young Opthomologist who believes in service is divine help ...</p>
+                <button class="book-appointment" onclick= "saveDoctorInfo('Dr.V.Krishna Murthy', 'Opthomologist')">Book Appointment</button>
+            </div>
+        </section>
+    </main>
+    <script>
+      function saveDoctorInfo(doctor, specialist) {
+  localStorage.setItem('selectedDoctor', doctor);
+  localStorage.setItem('selectedSpecialist', specialist);
+  window.location.href = 'http://127.0.0.1:5500/MediHubTPT/appointmentpage1.html';
+}
+
+    </script>
+    <footer>
+        <p>&copy; 2023 MediHub-TPT. All rights reserved.</p>
+    </footer>
+</body>
+</html>

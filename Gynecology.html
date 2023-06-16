@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctors' page MediHub-TPT</title>
+    <link rel="icon" href="https://us.123rf.com/450wm/mantinov/mantinov2004/mantinov200400007/143789285-help-for-health-icon-logo-vector-graphic-design-helping-hands-inside-medical-cross-sign.jpg?ver=6" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+        }
+
+        .doctor-image {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        .doctor-image img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .doctor-info {
+            flex-grow: 1;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .book-appointment {
+            margin-right: 20px;
+            float: right;
+            padding: 10px;
+            background-color: #eff2ef; /* Replace with your desired color */
+            color: #1563b1; /* Set text color to white */
+            padding: 10px 20px; /* Add padding for better visual appearance */
+            border: 1px solid black; /* Remove border */
+            border-radius: 100px; /* Add border radius for rounded corners */
+            cursor: pointer;
+            border-color: #1563b1;
+            
+        }
+
+
+        .book-appointment:hover {
+        background-color: #45a049; /* Replace with the desired hover color */
+        color: #ddd;
+}
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar .logo img {
+    height: 70px;
+    width: auto;
+    margin: 5px;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .about-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+ 
+  nav a, .contact-section p, .follow-us-section ul {
+    margin: 5px 0;
+  }
+  
+  .contact-section, .follow-us-section {
+    flex-basis: 50%;
+  }
+  
+  .contact-section h4, .follow-us-section h4 {
+    margin-bottom: 10px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #1dce0d;
+    text-decoration: none;
+    position: relative;
+    padding-right: 12px;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .header {
+    background-color: #f8f8f8;
+    padding: 0;
+  }
+  
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(25, 174, 211);
+    height: 50px;
+    margin-top: -7.5px;
+    padding: 25px;
+    margin-bottom: -5px;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-top {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .nav-close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+  }
+  
+  .navbar-item {
+    margin-left: 45px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+.navbar-link {
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+.main-content {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    padding-left: 70px;
+    padding-top: 150px;
+    margin-bottom: -50px;
+    background-image: url('https://thumbs.dreamstime.com/b/gynecologist-doctor-gynecology-specialist-aesthetic-handdrawn-highlighted-illustration-human-uterus-neutral-grey-background-229326295.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f449c6;
+    text-align: center;
+    font-size: xx-large;
+    height: 300px;
+  }
+  .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #dce2e2;
+  padding: 10px;
+  border-radius: 3px;
+  z-index: 999;
+  width: 150px;
+}
+
+.navbar-item:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a:hover{
+  text-decoration: none;
+  color: #261cd4;
+}
+.dropdown-menu a{
+  color: #000;
+  font-size: large;
+}
+.arr{
+display: inline-block;
+width: 5px;
+height: 5px;
+margin-right: 5px;
+border-top: 2px solid #000;
+border-right: 2px solid #000;
+transform: rotate(135deg);
+}
+    </style>
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container2">
+          <nav class="navbar" data-navbar>
+    
+            <div class="navbar-top">
+    
+              <a href="#" class="logo">
+                <img class="imggs" src="https://us.123rf.com/450wm/mantinov/mantinov2004/mantinov200400007/143789285-help-for-health-icon-logo-vector-graphic-design-helping-hands-inside-medical-cross-sign.jpg?ver=6" width="70" height="60" alt="Doclab home">
+              </a>
+              <hl style="font-size: x-large;">MediHub-TPT</hl>
+    
+              <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+    
+            </div>
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="http://localhost/MEDIHUBTPT/homepage1.html" class="navbar-link title-md">Home</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#doct" class="navbar-link title-md">Doctors</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#" class="navbar-link title-md">Services <span class="arr"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://127.0.0.1:5500/Cordiololgy.html" >Cardialogy</a></li>
+                  <li><a href="http://127.0.0.1:5500/opthomology.html" >Opthomology</a></li>
+                  <li><a href="http://127.0.0.1:5500/Paediatrician.html" >Paediatrician</a></li>
+                  <li><a href="http://127.0.0.1:5500/Gynecology.html#" >Gynecology</a></li>
+                  <li><a href="http://127.0.0.1:5500/Dentaldoc.html" >Dentistry</a></li>
+                  <li><a href="http://127.0.0.1:5500/ENTdoct.html" >ENT Specialists</a></li>
+                  <li><a href="http://127.0.0.1:5500/Orthopedistdoct.html" >Orthopedics</a></li>
+                </ul>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="http://localhost/MEDIHUBTPT/loginpage1.php" class="navbar-link title-md">Logout</a>
+              </li>
+    
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="main-content">
+            <h1>Best Doctors In Gynecology</h1><br>
+        <div class="background">
+          <div class="transbox">
+      </div>
+    </div>
+    </div>
+    <main>
+        <section id="doct">
+            <div class="doctor-image">
+                <img src="https://skedoccoresa.blob.core.windows.net/skedoc-images/DoctorFinal/Tirupathi/Profile/Dr__Ushasree_Gandla_f0d40df1-e1d5-48fe-b9fa-771146872e33.jpeg" alt="Dr. John Smith">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr.G.Ushasree </h2>
+                <p><strong>Specialization:</strong> Gynecologist</p>
+                <p><strong>Hospital:</strong>Smt. Sarojamma Memorial Multi Specialty Hospital</p>
+                <p><strong>Education:</strong>Guntur Medical College M.B.B.S,DGO</p>
+                <p><strong>Experience:</strong> Over 10 years of experience  </p>
+                <p>Dr.G.Ushasree is a renowned gynecologist with a passion for providing exceptional patient care....</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://content3.jdmagicbox.com/comp/tirupati/g3/9999px877.x877.150804182947.q6g3/catalogue/dr-ramachandra-k-manohari-hospital-tirupathi-ho-tirupati-g5nu8n05n1.jpg" alt="Dr. Sarah Johnson">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Ramachandra Kurabalakota</h2>
+                <p><strong>Specialization:</strong>Gynecologist</p>
+                <p><strong>Hospital: Manohari Hospital</strong></p>
+                <p><strong>Education:</strong>Professor of Gynecology, HOD</p>
+                <p><strong>Experience:</strong> Dedicated to providing compassionate care towards patients for over 35 years</p>
+                <p>Dr. Ramachandra Kurabalakota is a highly skilled and compassionate doctor who has great service period...</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://media.curofy.com/c3d6644f4686985680d3db21cce05ad2_1.jpg" alt="Dr. Emily Thompson" height="200px">
+            </div>
+            <div class="doctor-info">
+                <h2> Dr. Partha Sarathi Reddy Gaddam</h2>
+                <p><strong>Specialization:</strong>Gynecologist </p>
+                <p><strong>Hospital:</strong> Venkataramana Hospital</p>
+                <p><strong>Education:</strong>MBBS - Sri Venkateswara University,DGO.</p>
+                <p><strong>Experience:</strong> Extensive experience in diagnosing and treating various uterus conditions</p>
+                <p> Dr. Partha Sarathi Reddy Gaddam is a skilled gynecologist with a passion for helping patients achieve health...</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://content.jdmagicbox.com/comp/tirupati/e4/9999px877.x877.180722073015.a6e4/catalogue/dr-sp-subahan-general-hospital-tirupati-qk9hzkltjq.jpg?fit=around|160:261&crop=160:261;*,*" alt="Dr. Sarah Johnson">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Sreerama Murthy</h2>
+                <p><strong>Specialization:</strong>Gynecologist</p>
+                <p><strong>Hospital:</strong>Kuppam Care Hospital</p>
+                <p><strong>Education:</strong> Career Instt. Of Medical Sciences & Hospital  M.B.B.S </p>
+                <p><strong>Experience:</strong> Dedicated to providing compassionate care to  for over 10 years</p>
+                <p>Dr. Sreerama Murthy is highly qualified and young cardiologist who believes in service is divine help ...</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+    </main>
+    </main>
+    <footer>
+        <p>&copy; 2023 MediHub-TPT. All rights reserved.</p>
+    </footer>
+</body>
+</html>

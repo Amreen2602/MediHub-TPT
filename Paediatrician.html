@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctors' Page MediHub-TPT</title>
+    <link rel="icon" href="https://us.123rf.com/450wm/mantinov/mantinov2004/mantinov200400007/143789285-help-for-health-icon-logo-vector-graphic-design-helping-hands-inside-medical-cross-sign.jpg?ver=6" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+        }
+
+        .doctor-image {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        .doctor-image img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .doctor-info {
+            flex-grow: 1;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .book-appointment {
+            margin-right: 20px;
+            float: right;
+            padding: 10px;
+            background-color: #eff2ef; /* Replace with your desired color */
+            color: #1563b1; /* Set text color to white */
+            padding: 10px 20px; /* Add padding for better visual appearance */
+            border: 1px solid black; /* Remove border */
+            border-radius: 100px; /* Add border radius for rounded corners */
+            cursor: pointer;
+            border-color: #1563b1;
+            
+        }
+
+
+        .book-appointment:hover {
+        background-color: #45a049; /* Replace with the desired hover color */
+        color: #ddd;
+}
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar .logo img {
+    height: 70px;
+    width: auto;
+    margin: 5px;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .about-us {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThjMJ3k_Id84aqjc68BAIJ28dhJgggk_Z2YA&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .about-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  #specializations {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .specialization {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .specialization h3 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  .specialization p {
+    color: #666;
+    font-size: 14px;
+  }
+
+  nav a, .contact-section p, .follow-us-section ul {
+    margin: 5px 0;
+  }
+  
+  .contact-section, .follow-us-section {
+    flex-basis: 50%;
+  }
+  
+  .contact-section h4, .follow-us-section h4 {
+    margin-bottom: 10px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #1dce0d;
+    text-decoration: none;
+    position: relative;
+    padding-right: 12px;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .header {
+    background-color: #f8f8f8;
+    padding: 0;
+  }
+  
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(25, 174, 211);
+    height: 50px;
+    margin-top: -7.5px;
+
+    padding: 25px;
+  
+    margin-bottom: -5px;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-top {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .nav-close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+  }
+  
+  .navbar-item {
+    margin-left: 45px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+.navbar-link {
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+.main-content {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    padding-left: 70px;
+    padding-top: 150px;
+    margin-bottom: -100px;
+    background-image: url('https://www.thefamilytreehospital.com/images/new-born-care.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #2384f3;
+    text-align: center;
+    font-size: xx-large;
+    height: 300px;
+  }
+  .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #dce2e2;
+  padding: 10px;
+  border-radius: 3px;
+  z-index: 999;
+  width: 150px;
+}
+
+.navbar-item:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a:hover{
+  text-decoration: none;
+  color: #261cd4;
+}
+.dropdown-menu a{
+  color: #000;
+  font-size: large;
+}
+.arr{
+display: inline-block;
+width: 5px;
+height: 5px;
+margin-right: 5px;
+border-top: 2px solid #000;
+border-right: 2px solid #000;
+transform: rotate(135deg);
+}
+    </style>
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container2">
+          <nav class="navbar" data-navbar>
+    
+            <div class="navbar-top">
+    
+              <a href="#" class="logo">
+                <img class="imggs" src="https://us.123rf.com/450wm/mantinov/mantinov2004/mantinov200400007/143789285-help-for-health-icon-logo-vector-graphic-design-helping-hands-inside-medical-cross-sign.jpg?ver=6" width="70" height="60" alt="Doclab home">
+              </a>
+              <hl style="font-size: x-large;">MEDI-HUB</hl>
+    
+              <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+    
+            </div>
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="http://localhost/MEDIHUBTPT/homepage1.html" class="navbar-link title-md">Home</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#doct" class="navbar-link title-md">Doctors</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#" class="navbar-link title-md">Services <span class="arr"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://127.0.0.1:5500/Cordiololgy.html" >Cardialogy</a></li>
+                  <li><a href="http://127.0.0.1:5500/opthomology.html" >Opthomology</a></li>
+                  <li><a href="http://127.0.0.1:5500/Paediatrician.html" >Paediatrician</a></li>
+                  <li><a href="http://127.0.0.1:5500/Gynecology.html#" >Gynecology</a></li>
+                  <li><a href="http://127.0.0.1:5500/Dentaldoc.html" >Dentistry</a></li>
+                  <li><a href="http://127.0.0.1:5500/ENTdoct.html" >ENT Specialists</a></li>
+                  <li><a href="http://127.0.0.1:5500/Orthopedistdoct.html" >Orthopedics</a></li>
+                </ul>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="http://localhost/MEDIHUBTPT/loginpage1.php" class="navbar-link title-md">Logout</a>
+              </li>
+
+    
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="main-content">
+            <h1>Best Pediatricians</h1><br>
+        <div class="background">
+          <div class="transbox">
+      </div>
+    </div>
+    </div>
+    <main>
+        <section id="doct">
+            <div class="doctor-image">
+                <img src="https://www.thefamilytreehospital.com/images/dr-shravan-krishna-reddy-p.jpg" alt="Dr. Shravan Krishna Reddy P">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Shravan Krishna Reddy P</h2>
+                <p><strong>Specialization:</strong> Consultant Pediatrician & Neonatologist</p>
+                <p><strong>Hospital:</strong>The Family Tree Hospital</p>
+                <p><strong>Education:</strong>FIPM (Neonatology), PGPN (USA)</p>
+                <p><strong>Experience:</strong>-------</p>
+                <p> Dr. Shravan brings a wealth of experience having worked in corporate healthcare organizations such as Manipal Hospital, Rainbow Hospital, Aster Hospitals and Ovum Hospitals to name a few.</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://www.thefamilytreehospital.com/images/dr-harshita-g.jpg" alt="Dr. Harshita G">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Harshita G</h2>
+                <p><strong>Specialization:</strong>MD (General Medicine) (Gold Medalist) Consultant Physician & Diabetologist</p>
+                <p><strong>Hospital:</strong>The Family Tree Hospital</p>
+                <p><strong>Education:</strong> gold medalist in MD (General Medicine) from the prestigious Sri Devraj Urs Medical College. </p>
+                <p><strong>Experience:</strong>--------</p>
+                <p>Dr. Harshita G worked as a consultant physician in Manipal Hospitals and Silicon City Hospital, Bengaluru. </p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+        <section>
+            <div class="doctor-image">
+                <img src="https://media.licdn.com/dms/image/C5103AQGQ0gLHSDGMQQ/profile-displayphoto-shrink_800_800/0/1560956537622?e=2147483647&v=beta&t=1wisnjRhZkZ_GV5Utpuu6lp18DJDgRyRYxhszhQOj3k" alt="Dr. Kireeti A S " height="200px">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Kireeti A S </h2>
+                <p><strong>Specialization:</strong>Pediatrician</p>
+                <p><strong>Hospital:</strong> Triveni Children Hospital</p>
+                <p><strong>Education:</strong>General Pediatrician</p>
+                <p><strong>Experience:</strong> Dedicated to providing compassionate care to  for over 24 years</p>
+                <p>-----------</p>
+                <button class="book-appointment" onclick= "window.location.href = 'http://127.0.0.1:5500/appointmentpage1.html';">Book Appointment</button>
+            </div>
+        </section>
+    </main>
+    </main>
+    <footer>
+        <p>&copy; 2023 Aster Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>

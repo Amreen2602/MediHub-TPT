@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://us.123rf.com/450wm/mantinov/mantinov2004/mantinov200400007/143789285-help-for-health-icon-logo-vector-graphic-design-helping-hands-inside-medical-cross-sign.jpg?ver=6" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="appointmentpage1.css">
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container2">
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img class="imggs" src="https://us.123rf.com/450wm/mantinov/mantinov2004/mantinov200400007/143789285-help-for-health-icon-logo-vector-graphic-design-helping-hands-inside-medical-cross-sign.jpg?ver=6" width="70" height="60" alt="Doclab home">
+          </a>
+          <hl style="font-size: x-large;">MEDI-HUB</hl>
+
+          <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="http://127.0.0.1:5500/homepage1.html" class="navbar-link title-md">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="http://127.0.0.1:5500/MediHubTPT/homepage1.html#doctors" class="navbar-link title-md">Doctors</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Services <span class="arr"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://127.0.0.1:5500/Cordiololgy.html" >Cardialogy</a></li>
+              <li><a href="http://127.0.0.1:5500/opthomology.html" >Opthomology</a></li>
+              <li><a href="http://127.0.0.1:5500/Paediatrician.html" >Paediatrician</a></li>
+              <li><a href="http://127.0.0.1:5500/Gynecology.html#" >Gynecology</a></li>
+              <li><a href="http://127.0.0.1:5500/Dentaldoc.html" >Dentistry</a></li>
+              <li><a href="http://127.0.0.1:5500/ENTdoct.html" >ENT Specialists</a></li>
+              <li><a href="http://127.0.0.1:5500/Orthopedistdoct.html" >Orthopedics</a></li>
+            </ul>
+          </li>
+          <li class="navbar-item">
+            <a href="http://localhost/MEDIHUBTPT/loginpage1.php" class="navbar-link title-md">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <div class="container" id="containerA">
+        <h1>Doctor's Appointment</h1>
+        <form class="appointment-form" action="appointmentpage.php" method="post">
+          <div class="form-row">
+            <div class="form-column">
+              <label for="name">Doctor<span class="star-mark">*</span></label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-column">
+              <label for="spname">Specialist<span class="star-mark">*</span></label>
+              <input type="text" id="spname" name="spname" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-column">
+              <label for="Fname">Name<span class="star-mark">*</span></label>
+              <input type="text" id="Fname" name="Fname" required>
+            </div>
+            <div class="form-column">
+              <label for="phone">Phone<span class="star-mark">*</span></label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]+" required>
+            </div>
+          </div>
+            <div class="form-row">
+            <div class="form-column">
+              <label for="email">Email<span class="star-mark">*</span></label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-column">
+                <label for="date">Date<span class="star-mark">*</span></label>
+                <input type="date" id="date" name="date" required>
+            </div>
+          </div>
+          <div class="submitting">
+            <div class="submitt">
+              <button type="submit">Scheduled Appointment</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <script>
+        <!-- Add this script tag to the appointment page -->
+  document.addEventListener('DOMContentLoaded', function() {
+    // Retrieve the stored doctor and specialist information from localStorage
+    const doctor = localStorage.getItem('selectedDoctor');
+    const specialist = localStorage.getItem('selectedSpecialist');
+
+    // Fill the doctor and specialist fields with the retrieved information
+    document.getElementById('name').value = doctor;
+    document.getElementById('spname').value = specialist;
+
+    // Clear the stored data from localStorage
+    localStorage.removeItem('selectedDoctor');
+    localStorage.removeItem('selectedSpecialist');
+  });
+      </script>
+      <footer>
+        <div class="footer-content">
+          <div class="quick-links">
+            <h4>Quick Links</h4>
+        
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Latest Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+    
+          </div>
+          <div class="popular-links">
+            <h4>Popular Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Latest Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="get-in-touch">
+            <h4>Get In Touch</h4>
+            <p>Location, City, Country</p>
+            <p>Email: info@example.com</p>
+            <p>Phone: +012 345 67890</p>
+          </div>
+          <div class="follow-us">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <a href="#" class="fa fa-instagram"></a> 
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+    <div id="receipt"></div>
+    <script>
+      <!-- Add this script tag to the appointment page -->
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Retrieve the stored doctor and specialist information from localStorage
+    const doctor = localStorage.getItem('selectedDoctor');
+    const specialist = localStorage.getItem('selectedSpecialist');
+
+    // Fill the doctor and specialist fields with the retrieved information
+    document.getElementById('name').value = doctor;
+    document.getElementById('spname').value = specialist;
+
+    // Clear the stored data from localStorage
+    localStorage.removeItem('selectedDoctor');
+    localStorage.removeItem('selectedSpecialist');
+  });
+
+
+    function myFunction() {
+      // Get the form field values
+      var doctor = document.getElementById('name').value;
+      var specialist = document.getElementById('spname').value;
+      var Name = document.getElementById('Fname').value;
+      var phone = document.getElementById('phone').value;
+      var email = document.getElementById('email').value;
+      var date = document.getElementById('date').value;
+    
+      // Create the receipt content
+      var receiptContent =
+        '<h2>Appointment Receipt</h2>' +
+        '<p><strong>Doctor:</strong> ' + doctor + '</p>' +
+        '<p><strong>Specialist:</strong> ' + specialist + '</p>' +
+        '<p><strong>First Name:</strong> ' + firstName + '</p>' +
+        '<p><strong>Phone:</strong> ' + phone + '</p>' +
+        '<p><strong>Email:</strong> ' + email + '</p>' +
+        '<p><strong>Date:</strong> ' + date + '</p>' +
+        '<h3>Congratulations! Your Appointment has been booked:)</h3>'+
+        '<p><strong> IF ANY QUERIES then contact:987653436</p>';
+      // Replace the content of the container div with the receipt
+      var containerDiv = document.getElementById('containerA');
+      containerDiv.innerHTML = receiptContent;
+    }
+  </script>
+  
+</body>
+</html>
